@@ -113,8 +113,9 @@ const settingsStore = create<SettingsState>()(
 
       // Model Provider
       selectAIService:
-        (process.env.NEXT_PUBLIC_SELECT_AI_SERVICE as AIService) || 'openai',
-      selectAIModel: process.env.NEXT_PUBLIC_SELECT_AI_MODEL || 'gpt-4',
+        (process.env.NEXT_PUBLIC_SELECT_AI_SERVICE as AIService) || 'google',
+      selectAIModel:
+        process.env.NEXT_PUBLIC_SELECT_AI_MODEL || 'gemini-1.5-pro',
       localLlmUrl: process.env.NEXT_PUBLIC_LOCAL_LLM_URL || '',
       selectVoice:
         (process.env.NEXT_PUBLIC_SELECT_VOICE as AIVoice) || 'voicevox',
