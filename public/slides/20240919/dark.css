@@ -1,0 +1,77 @@
+/* @theme dark */
+@import "base";
+
+:root {
+  --main-theme: rgb(14, 131, 253);
+  --background-theme: rgb(20, 20, 20);
+  --background-code: rgb(40, 40, 40, 0.2);
+  --text-color: rgb(220, 220, 220);
+  --accent-color: rgb(14, 131, 253);
+}
+
+section {
+  background-color: var(--background-theme);
+  color: var(--text-color);
+  background-image:
+    linear-gradient(30deg, var(--background-code) 12%, transparent 12.5%, transparent 87%, var(--background-code) 87.5%, var(--background-code)),
+    linear-gradient(150deg, var(--background-code) 12%, transparent 12.5%, transparent 87%, var(--background-code) 87.5%, var(--background-code)),
+    linear-gradient(30deg, var(--background-code) 12%, transparent 12.5%, transparent 87%, var(--background-code) 87.5%, var(--background-code)),
+    linear-gradient(150deg, var(--background-code) 12%, transparent 12.5%, transparent 87%, var(--background-code) 87.5%, var(--background-code)),
+    linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25.5%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)),
+    linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25.5%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+section h1,
+section h2,
+section h3,
+section h4 {
+  color: var(--accent-color);
+}
+
+section code {
+  background-color: var(--background-code);
+  color: var(--text-color);
+}
+
+section pre {
+  background-color: var(--background-code);
+  border-color: var(--accent-color);
+}
+
+blockquote {
+  border-top-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+section::after {
+  color: var(--accent-color);
+}
+
+header {
+  background-color: var(--background-theme);
+  color: var(--text-color);
+}
+
+footer {
+  background-color: var(--background-theme);
+  color: var(--text-color);
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url('../assets/logo_with_text.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}

@@ -78,8 +78,8 @@ export default function VrmViewer() {
     <div className={'absolute top-0 left-0 w-screen h-[100svh] z-5'}>
       <div className="absolute top-0 left-0 right-0 text-center p-5">
         <div className="flex flex-col gap-2 text-white text-2xl font-bold">
-          <h1 className="text-3xl font-extrabold">{time}</h1>
-          <p className="text-lg font-medium text-sky-1">{date}</p>
+          <h1 className="text-4xl font-extrabold pt-10">{time}</h1>
+          <p className="text-xl font-medium text-sky-1 pb-10">{date}</p>
         </div>
       </div>
       <canvas ref={canvasRef} className={'h-full w-full'}></canvas>

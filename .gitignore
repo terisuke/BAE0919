@@ -42,6 +42,3 @@ credentials.json
 .tool-versions
 
 certificates
-
-/public/slides/*
-!/public/slides/demo/
